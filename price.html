@@ -7,11 +7,12 @@
     <title>BarberShop Borodinsky | price list</title>
     <link rel="stylesheet" href="css/price-list/style.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index/footer.css">
 </head>
 
 <body>
     <header class="header">
-        <img class="logo" src="#" alt="logo">
+        <img class="logo" src="images/logo-small.svg" alt="logo">
         <nav class="header-navigation">
             <ol>
                 <li class="header-navigation__item"><a href="" class="header-navigation__link">информация</a></li>
@@ -27,25 +28,94 @@
         <ol class="main__list">
             <li class="main__list__item">главная</li>
             <img class="main__list__img" src="#" alt="cube">
-            <li class="main__list__itemnow">Прайс-лист</li>
+            <li class="main__list__item_now main__list__item">Прайс-лист</li>
         </ol>
-        <h2 class="main__title">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
-        <div class="main__sredstvo">
-            <h3 class="sredstvo__title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
-            <ol class="sredstvo__list"><img src="#" alt="cube" class="sredstvo__list__img"><img src="#" alt="cube" class="sredstvo__list__img"><img src="#" alt="cube" class="sredstvo__list__img"><img src="#" alt="cube" class="sredstvo__list__img">
-                <li class="sredstvo__list__item">Baxter of California</li>
-                <li class="sredstvo__list__item">Mr Natty</li>
-                <li class="sredstvo__list__item">Suavecito</li>
-                <li class="sredstvo__list__item">Malin+Goet</li>
-            </ol>
+        <div class="main-title">
+            <hr class="main-title__separator">
+            <h2 class="main-title__text">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+            <hr class="main-title__separator">
         </div>
-        <div class="main__price">
-            <h3 class="price__title">ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h3>
-           
+        <div class="content">
+            <div class="sredstvo">
+                <h3 class="sredstvo__title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
+                <ol class="sredstvo-list">
+                    <li class="sredstvo-list__item">
+                        <img class="sredstvo-list__img" src="" alt="cube">
+                        <p class="sredstvo-list__text">Baxter of California</p>
+                    </li>
+                    <li class="sredstvo-list__item">
+                        <img class="sredstvo-list__img" src="" alt="cube">
+                        <p class="sredstvo-list__text">Mr Natty</p>
+                    </li>
+                    <li class="sredstvo-list__item">
+                        <img class="sredstvo-list__img" src="" alt="cube">
+                        <p class="sredstvo-list__text">Suavecito</p>
+                    </li>
+                    <li class="sredstvo-list__item">
+                        <img class="sredstvo-list__img" src="" alt="cube">
+                        <p class="sredstvo-list__text">Malin+Goet</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="price">
+                <h3 class="price__title">ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h3>
+                <table class="price-table">
+                    <tr>
+                        <td class="price-table__cell">СТРИЖКА</td>
+                        <td class="price-table__cell">1500 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="price-table__cell">СТРИЖКА БОРОДЫ</td>
+                        <td class="price-table__cell">500 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="price-table__cell">НАКРУТКА УСОВ</td>
+                        <td class="price-table__cell">350 ₽</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="content">
+            <h3 class="content__title">НЕСКОЛЬКО СЛОВ О НАС:</h3>
+            <div class="text">
+                <p class="text__text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого
+                    клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы
+                    делаем качество.</p>
+                <p class="text__text">Наша мастерская расположена в центре города, поэтому
+                    сделать стильную стрижку можно в любое время, даже в
+                    обеденный перерыв. Здесь вы можете погрузиться в удобную
+                    для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+            </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <nav class="footer-navigation">
+                <ol class="footer-navigation__list">
+                    <li class="footer-navigation__item">Барбершоп «БОРОДИНСКИЙ»</li>
+                    <li class="footer-navigation__item">
+                        Адрес: г. Санкт-Петербург б. Конюшенная д.19/8
+                    </li>
+                    <li class="footer-navigation__item">
+                        <a class="footer-navigation__link" href="#">Как нас найти?</a>
+                    </li>
+                    <li class="footer-navigation__item">Телефон: +7 (495) 666-02-66</li>
+                </ol>
+            </nav>
+            <div class="social">
+                <h5 class="social__title">Давайте дружить!</h5>
+                <div class="social__icons">
+                    <img class="social__img" src="images/vk.png" alt="vk" />
+                    <img class="social__img" src="images/facebook.png" alt="facebook" />
+                    <img class="social__img" src="images/insta.png" alt="instagram" />
+                </div>
+            </div>
+            <div class="license">
+                <h5 class="license__title">Разработано:</h5>
+                <button class="license__link" href="#">Asim</button>
+            </div>
+        </div>
+    </footer>
     </footer>
 </body>
 
