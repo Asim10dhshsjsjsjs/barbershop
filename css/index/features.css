@@ -1,0 +1,21 @@
+.features{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.feature__img{
+    width: 32px;
+    height: 31px;
+}

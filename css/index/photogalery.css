@@ -1,0 +1,20 @@
+.photogalery__img{
+    width: 100%;
+}
+
+.photogalery__buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.photogalery{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.photogalery__title{
+    display: flex;
+    text-align: start;
+}
+

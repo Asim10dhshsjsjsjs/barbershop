@@ -1,0 +1,21 @@
+@import url(photogalery.css);
+@import url(news.css);
+@import url(contact.css);
+@import url(boking.css);
+.content{
+    width: 100%;
+    background-color: #fff;
+    padding:40px 80px;
+    display: flex;
+    margin-bottom: 35px;
+    color: #000;
+    gap: 40px;
+}
+.news,.photogalery,.contact,.booking{
+    width: 50%;
+}
+.content__separator{
+    width: 8px;
+    height: 278px;
+    align-self: center;
+}

@@ -1,0 +1,32 @@
+.booking__button{
+    width: 100%;
+}
+.booking{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.booking-form__input{
+    border: 2px solid #000;
+    padding: 10px 15px;
+    color: #000;
+    
+}
+.booking-form{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+}
+.booking-form__field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+.booking-form__label{
+    margin-left: 20px;
+}
+.booking-form__input:active{
+    border: 2px solid #313131;
+}

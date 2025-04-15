@@ -1,0 +1,11 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact__buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
