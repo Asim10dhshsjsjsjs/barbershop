@@ -1,0 +1,14 @@
+.price{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 40px;
+}
+.price-table__cell{
+    border: 2px solid #000;
+    padding: 10px 20px;
+    width: 50%;
+}
+.price-table__cell_centered{
+    text-align: center;
+}

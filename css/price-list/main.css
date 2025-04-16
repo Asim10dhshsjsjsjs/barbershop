@@ -1,0 +1,56 @@
+@import url(sredstvo.css);
+@import url(price.css);
+.main{
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 80px 10%;
+    gap: 30px;
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+ 
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.text{
+    display: flex;
+    gap: 40px;
+}
+.text__text{
+    width: 50%;
+}
+.content__title{
+    display: flex;
+    flex-direction: column;
+}
+.bread-crumbs{
+    align-self: start;
+}
+.main__list{
+    display: flex;
+    gap: 20px;
+}
+.main__list__item_now{
+    color: #7c7c7c;
+}
+.main-title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-title__separator{
+    width: 160px;
+    height: 2px;
+    
+}

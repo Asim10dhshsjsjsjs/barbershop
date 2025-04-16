@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="css/price-list/style.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index/footer.css">
+    <link rel="stylesheet" href="css/price-list/main.css">
 </head>
 
 <body>
     <header class="header">
-        <img class="logo" src="images/logo-small.svg" alt="logo">
+        <a class="header__link" href="index.html">
+            <img class="logo" src="images/logo-small.svg" alt="logo">
+        </a>
         <nav class="header-navigation">
-            <ol>
+            <ol class="header-navigation__list">
                 <li class="header-navigation__item"><a href="" class="header-navigation__link">информация</a></li>
                 <li class="header-navigation__item"><a href="" class="header-navigation__link">новости</a></li>
                 <li class="header-navigation__item"><a href="" class="header-navigation__link">Прайс-лист</a></li>
@@ -24,15 +27,17 @@
         </nav>
     </header>
     <main class="main">
-        <h3 class="main__title">Прайс-лист</h3>
-        <ol class="main__list">
-            <li class="main__list__item">главная</li>
-            <img class="main__list__img" src="#" alt="cube">
-            <li class="main__list__item_now main__list__item">Прайс-лист</li>
-        </ol>
+        <div class="bread-crumbs">
+            <h3 class="main__title">Прайс-лист</h3>
+            <ol class="main__list">
+                <li class="main__list__item">главная</li>
+                <img class="main__list__img" src="images/cube-black.svg" alt="cube">
+                <li class="main__list__item_now main__list__item">Прайс-лист</li>
+            </ol>
+        </div>
         <div class="main-title">
             <hr class="main-title__separator">
-            <h2 class="main-title__text">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+            <h1 class="main-title__text">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
             <hr class="main-title__separator">
         </div>
         <div class="content">
@@ -40,19 +45,19 @@
                 <h3 class="sredstvo__title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
                 <ol class="sredstvo-list">
                     <li class="sredstvo-list__item">
-                        <img class="sredstvo-list__img" src="" alt="cube">
+                        <img class="sredstvo-list__img" src="images/cube-black.svg" alt="cube">
                         <p class="sredstvo-list__text">Baxter of California</p>
                     </li>
                     <li class="sredstvo-list__item">
-                        <img class="sredstvo-list__img" src="" alt="cube">
+                        <img class="sredstvo-list__img" src="images/cube-black.svg" alt="cube">
                         <p class="sredstvo-list__text">Mr Natty</p>
                     </li>
                     <li class="sredstvo-list__item">
-                        <img class="sredstvo-list__img" src="" alt="cube">
+                        <img class="sredstvo-list__img" src="images/cube-black.svg" alt="cube">
                         <p class="sredstvo-list__text">Suavecito</p>
                     </li>
                     <li class="sredstvo-list__item">
-                        <img class="sredstvo-list__img" src="" alt="cube">
+                        <img class="sredstvo-list__img" src="images/cube-black.svg" alt="cube">
                         <p class="sredstvo-list__text">Malin+Goet</p>
                     </li>
                 </ol>
@@ -62,20 +67,20 @@
                 <table class="price-table">
                     <tr>
                         <td class="price-table__cell">СТРИЖКА</td>
-                        <td class="price-table__cell">1500 ₽</td>
+                        <td class="price-table__cell price-table__cell_centered">1500 ₽</td>
                     </tr>
                     <tr>
                         <td class="price-table__cell">СТРИЖКА БОРОДЫ</td>
-                        <td class="price-table__cell">500 ₽</td>
+                        <td class="price-table__cell price-table__cell_centered">500 ₽</td>
                     </tr>
                     <tr>
                         <td class="price-table__cell">НАКРУТКА УСОВ</td>
-                        <td class="price-table__cell">350 ₽</td>
+                        <td class="price-table__cell price-table__cell_centered">350 ₽</td>
                     </tr>
                 </table>
             </div>
         </div>
-        <div class="content">
+        <div class="about">
             <h3 class="content__title">НЕСКОЛЬКО СЛОВ О НАС:</h3>
             <div class="text">
                 <p class="text__text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого
