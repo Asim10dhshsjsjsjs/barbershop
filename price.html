@@ -11,28 +11,30 @@
 
   <body>
     <header class="header">
-      <a href="index.html"
-        ><img class="logo" src="images/logo-small.svg" alt="logo"
-      /></a>
+      <section class="header__wrapper">
+        <div class="logo">
+            <a href="index.html" class="logo__link"><img class="logo__img" src="images/logo-small.svg" alt="logo"/></a>
+        </div>
       <nav class="header-navigation">
         <ol class="header-navigation__list">
           <li class="header-navigation__item">
-            <a href="" class="header-navigation__link">Информация</a>
+            <a href="#" class="header-navigation__link">Информация</a>
           </li>
           <li class="header-navigation__item">
-            <a href="" class="header-navigation__link">Новости</a>
+            <a href="#" class="header-navigation__link">Новости</a>
           </li>
           <li class="header-navigation__item">
-            <a href="" class="header-navigation__link">Прайс-лист</a>
+            <a href="#" class="header-navigation__link header-navigation__link_active">Прайс-лист</a>
           </li>
           <li class="header-navigation__item">
-            <a href="" class="header-navigation__link">Магазин</a>
+            <a href="#" class="header-navigation__link">Магазин</a>
           </li>
           <li class="header-navigation__item">
-            <a href="" class="header-navigation__link">Контакты</a>
+            <a href="#" class="header-navigation__link">Контакты</a>
           </li>
         </ol>
       </nav>
+      </section>
     </header>
     <main class="main">
       <nav class="bread-crumbs">
@@ -40,70 +42,74 @@
         <ol class="bread-crumbs__list">
           <li class="bread-crumbs__item">Главная</li>
           <img class="bread-crumbs__separator" src="#" alt="cube" />
-          <li class="bread-crumbs__item bread-crumbs__item_now">Прайс-лист</li>
+          <li class="bread-crumbs__item bread-crumbs__item_active">Прайс-лист</li>
         </ol>
       </nav>
       <div class="main-title">
         <hr class="main-title__separator" />
-        <h2 class="main-title__text">Истинно мужская классика</h2>
+        <h1 class="main-title__text">Истинно мужская классика</h1>
         <hr class="main-title__separator" />
       </div>
-      <div class="content">
-        <div class="sredstvo">
-          <h3 class="sredstvo__title">Мы используем только лучшие средства:</h3>
-          <ol class="sredstvo-list">
-            <li class="sredstvo-list__item">
-              <img class="sredstvo-list__img" src="" alt="cube" />
-              <p class="sredstvo-list__text">Baxter of California</p>
+
+      <section class="services">
+        <div class="products">
+          <h3 class="products__title">Мы используем только лучшие средства:</h3>
+          <ol class="products__list">
+            <li class="product">
+              <img class="product__img" src="" alt="cube" />
+              <p class="product__name">Baxter of California</p>
             </li>
-            <li class="sredstvo-list__item">
-              <img class="sredstvo-list__img" src="" alt="cube" />
-              <p class="sredstvo-list__text">Mr Natty</p>
+            <li class="product">
+              <img class="product__img" src="" alt="cube" />
+              <p class="product__name">Mr Natty</p>
             </li>
-            <li class="sredstvo-list__item">
-              <img class="sredstvo-list__img" src="" alt="cube" />
-              <p class="sredstvo-list__text">Suavecito</p>
+            <li class="product">
+              <img class="product__img" src="" alt="cube" />
+              <p class="product__name">Suavecito</p>
             </li>
-            <li class="sredstvo-list__item">
-              <img class="sredstvo-list__img" src="" alt="cube" />
-              <p class="sredstvo-list__text">Malin+Goet</p>
+            <li class="product">
+              <img class="product__img" src="" alt="cube" />
+              <p class="product__name">Malin+Goet</p>
             </li>
           </ol>
         </div>
-        <div class="price">
-          <h3 class="price__title">Цены на услуги наших мастеров:</h3>
-          <table class="price-table">
-            <tr>
-              <td class="price-table__cell">Стрижка</td>
-              <td class="price-table__cell">1500 ₽</td>
+      
+        <div class="service-prices">
+          <h3 class="service-prices__title">Цены на услуги наших мастеров:</h3>
+          <table class="service-prices__table">
+            <tr class="service-prices__row">
+              <td class="service-prices__cell">Стрижка</td>
+              <td class="service-prices__cell service-prices__cell_centered">1500 ₽</td>
             </tr>
-            <tr>
-              <td class="price-table__cell">Стрижка бороды</td>
-              <td class="price-table__cell">500 ₽</td>
+            <tr class="service-prices__row">
+              <td class="service-prices__cell">Стрижка бороды</td>
+              <td class="service-prices__cell service-prices__cell_centered">500 ₽</td>
             </tr>
-            <tr>
-              <td class="price-table__cell">Накрутка усов</td>
-              <td class="price-table__cell">350 ₽</td>
+            <tr class="service-prices__row">
+              <td class="service-prices__cell">Накрутка усов</td>
+              <td class="service-prices__cell service-prices__cell_centered">350 ₽</td>
             </tr>
           </table>
         </div>
-      </div>
-      <div class="content">
-        <h3 class="content__title">Несколько слов о нас:</h3>
-        <div class="text">
-          <p class="text__text">
+      </section>      
+      
+      <section class="about">
+        <h3 class="about__title">Несколько слов о нас:</h3>
+        <div class="about__description">
+          <p class="about__text">
             Наша парикмахерская занимается исключительно мужскими стрижками.
-            Стрижка каждого клиента для нас - это уникальная и продуманная до
+            Стрижка каждого клиента для нас — это уникальная и продуманная до
             мелочей работа. Мы не работаем на количество, мы делаем качество.
           </p>
-          <p class="text__text">
+          <p class="about__text">
             Наша мастерская расположена в центре города, поэтому сделать
             стильную стрижку можно в любое время, даже в обеденный перерыв.
             Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать
             себя комфортно и свободно!
           </p>
         </div>
-      </div>
+      </section>      
+
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
