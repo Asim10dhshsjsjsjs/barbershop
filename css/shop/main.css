@@ -1,0 +1,60 @@
+.content{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.filter-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.filter-form__brends,.filter-form__groups{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter-form__item{
+    display: flex;
+    gap: 15px;
+}
+.filter-form__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.filter-form__checkbox{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.filter-form__checkbox input{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+}
+.filter-form__box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.filter-form__box::after{
+    content:'';
+    display: none;
+}
+.filter-form__checkbox input:checked+.filter-form__box::after{
+    content: url(/images/cross.svg);
+    display: block;
+    color: #000;
+}
+
