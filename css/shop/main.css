@@ -49,12 +49,51 @@
     background-color: #fff;
 }
 .filter-form__box::after{
-    content:'';
-    display: none;
+    content: url(/images/cross.svg);
+    transform: scale(0);
+    opacity: 0;
+    height: 100%;
+    transition:all 150ms ease-in-out;
 }
 .filter-form__checkbox input:checked+.filter-form__box::after{
-    content: url(/images/cross.svg);
-    display: block;
-    color: #000;
+    transform: scale(1);
+    opacity: 1;
+}
+.filter-form__radio{
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000 ;
+    border-radius:50%;
+
+}
+.filter-form__radio input{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    margin: 0;
+}
+.filter-form__radio-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-form__radio-box::after{
+    content: "";
+    opacity: 0;
+    transform: scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: all 0.2s linear;
+}
+.filter-form__radio input:checked+.filter-form__radio-box::after{
+    opacity: 1;
+    transform: scale(0.75);
 }
 
