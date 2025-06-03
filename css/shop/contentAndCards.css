@@ -1,0 +1,48 @@
+.content__media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+}
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.content__buttons {
+  display: flex;
+  gap: 10px;
+}
+.buttons__button {
+  width: 40px;
+  height: 40px;
+}
+.card {
+  background-color: #bdbdbd;
+  display: grid;
+  grid-template-rows: 165px auto;
+}
+.card__img {
+  width: 220px;
+  height: 100%;
+}
+
+.card__button {
+  width: 80px;
+  height: 40px;
+}
+.card__price-block {
+  display: flex;
+}
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card__price-text {
+  width: calc(100% - 80px);
+  padding: 12px 0px;
+  text-align: center;
+  background-color: #939393;
+}

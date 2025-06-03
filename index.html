@@ -2,12 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/index/style.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop Borodinsky</title>
+    <script src="/script/slider.js" defer></script>
+    <script src="/script/modal.js" defer></script>
   </head>
   <body>
+    <section class="backdrop">
+      <section class="modal">
+        <div style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.ru/maps/org/pyatyorochka/75421015728/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Пятёрочка</a
+          ><a
+            href="https://yandex.ru/maps/43/kazan/category/supermarket/184108079/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Супермаркет в Казани</a
+          ><iframe
+            src="https://yandex.ru/map-widget/v1/?ll=49.111119%2C55.816196&mode=poi&poi%5Bpoint%5D=49.108054%2C55.815773&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D75421015728&z=16.98"
+            width="560"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </section>
+    </section>
+    <section class="backdrop">
+      <section class="modal">
+        <form action="">
+          <label for="">ваше имя</label>
+          <input type="text" />
+          <label for="">ваш email</label>
+          <input type="email" />
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </section>
     <header class="header">
       <nav class="header-navigation">
         <ol class="header-navigation__menu">
@@ -36,21 +71,24 @@
           <h3 class="feature__title">Быстро</h3>
           <img class="feature__img" src="images/cube.png" alt="cube" />
           <p class="feature__text">
-            Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+            Мы делаем свою работу быстро! Два часа пролетят незаметно и вы —
+            счастливый обладатель стильной стрижки-минутки!
           </p>
         </div>
         <div class="feature">
           <h3 class="feature__title">Круто</h3>
           <img class="feature__img" src="images/cube.png" alt="cube" />
           <p class="feature__text">
-            Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+            Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола
+            или кино! Во всяком случае внешне.
           </p>
         </div>
         <div class="feature">
           <h3 class="feature__title">Дорого</h3>
           <img class="feature__img" src="images/cube.png" alt="cube" />
           <p class="feature__text">
-            Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?
+            Наши мастера — профессионалы своего дела и не могут стоить дешево. К
+            тому же, разве цена не дает определеный статус?
           </p>
         </div>
       </div>
@@ -59,25 +97,39 @@
           <h3 class="news__title">Новости</h3>
           <div class="news__item">
             <p class="news__text">
-              Нам наконец завезли Ягермайстер! теперь вы можете пропустить стаканчик во время стрижки
+              Нам наконец завезли Ягермайстер! теперь вы можете пропустить
+              стаканчик во время стрижки
             </p>
             <span class="news__date">11 января</span>
           </div>
           <div class="news__item">
             <p class="news__text">
-              В нашей команде пополнение, борис «бритва» стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
+              В нашей команде пополнение, борис «бритва» стригунец, обладатель
+              множества титулов и наград пополнил наши стройные ряды
             </p>
             <span class="news__date">18 января</span>
           </div>
           <button class="news__button">Все новости</button>
         </div>
-        <img src="images/separator.png" alt="separator" class="content__separator">
+        <img
+          src="images/separator.png"
+          alt="separator"
+          class="content__separator"
+        />
         <div class="photogalery">
           <h3 class="photogalery__title">Фотогалерея</h3>
-          <img class="photogalery__img" src="images/photo.png" alt="place" />
+          <img
+            class="photogalery__img"
+            src="images/slider/photo.png"
+            alt="place"
+          />
           <div class="photogalery__buttons">
-            <button class="photogalery__button">Назад</button>
-            <button class="photogalery__button">Вперед</button>
+            <button class="photogalery__button photogalery__button_prev">
+              Назад
+            </button>
+            <button class="photogalery__button photogalery__button_next">
+              Вперед
+            </button>
           </div>
         </div>
       </section>
@@ -87,7 +139,9 @@
           <div class="info">
             <h5 class="info__subtitle">Барбершоп «БОРОДИНСКИЙ»</h5>
             <ol class="info__list">
-              <li class="info__item">Адрес: г. Санкт-Петербург,б.Конюшенная д.19/8</li>
+              <li class="info__item">
+                Адрес: г. Санкт-Петербург,б.Конюшенная д.19/8
+              </li>
               <li class="info__item">Телефон: +7 (495) 666-02-66</li>
             </ol>
           </div>
@@ -99,15 +153,22 @@
             </ol>
           </div>
           <div class="contact__buttons">
-            <button class="contact__button">Как проехать</button>
-            <button class="contact__button">Обратная связь</button>
+            <button id="mapButton" class="contact__button">Как проехать</button>
+            <button id="contactButton" class="contact__button">
+              Обратная связь
+            </button>
           </div>
         </div>
-        <img src="images/separator.png" alt="separator" class="content__separator">
+        <img
+          src="images/separator.png"
+          alt="separator"
+          class="content__separator"
+        />
         <div class="booking">
           <h3 class="booking__title">Записаться</h3>
           <p class="booking__subtitle">
-            Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+            Укажите желаемую дату и время и мы свяжемся с вами для подтверждения
+            брони
           </p>
           <form action="" class="booking-form">
             <div class="booking-form__field">
