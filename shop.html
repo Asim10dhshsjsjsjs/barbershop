@@ -1,175 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop Borodinsky | shop</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="css/shop/style.css" />
+    <script defer src="/script/pagination.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BarberShop Borodinsky | shop</title>
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="css/shop/style.css">
-  <script defer src="/script/pagination.js"></script>
-
-</head>
-
-<body>
-  <header class="header">
-    <section class="header__wrapper">
-      <div class="logo">
-        <a href="index.html" class="logo__link"><img class="logo__img" src="images/logo-small.svg" alt="logo" /></a>
-      </div>
-      <nav class="header-navigation">
-        <ol class="header-navigation__list">
-          <li class="header-navigation__item">
-            <a href="#" class="header-navigation__link">Информация</a>
-          </li>
-          <li class="header-navigation__item">
-            <a href="#" class="header-navigation__link">Новости</a>
-          </li>
-          <li class="header-navigation__item">
-            <a href="/price.html" class="header-navigation__link ">Прайс-лист</a>
-          </li>
-          <li class="header-navigation__item">
-            <a href="/shop.html" class="header-navigation__link header-navigation__link_active">Магазин</a>
-          </li>
-          <li class="header-navigation__item">
-            <a href="#" class="header-navigation__link">Контакты</a>
-          </li>
-        </ol>
-      </nav>
-    </section>
-  </header>
-
-  <main class="main">
-    <nav class="bread-crumbs">
-      <h3 class="bread-crumbs__title">СРЕДСТВА ДЛЯ УХОДА</h3>
-      <ol class="bread-crumbs__list">
-        <li class="bread-crumbs__item">Главная</li>
-        <img class="bread-crumbs__separator" src="/images/cube-black.svg" alt="cube" />
-        <li class="bread-crumbs__item">магазин</li>
-        <img class="bread-crumbs__separator" src="/images/cube-black.svg" alt="cube" />
-        <li class="bread-crumbs__item bread-crumbs__item_active">средство для ухода</li>
-      </ol>
-    </nav>
-
-    <section class="content">
-      <form class="filter-form">
-        <div class="filter-form__brends">
-          <h3 class="filter-form__title">ПРОИЗВОДИТЕЛИ:</h3>
-          <ol class="filter-form__list">
-            <li class="filter-form__item">
-              <div class="filter-form__checkbox">
-                <input type="checkbox">
-                <div class="filter-form__box"></div>
-              </div>
-              <p class="filter-form__text">Baxter of California</p>
+  <body>
+    <header class="header">
+      <section class="header__wrapper">
+        <div class="logo">
+          <a href="index.html" class="logo__link"
+            ><img class="logo__img" src="images/logo-small.svg" alt="logo"
+          /></a>
+        </div>
+        <nav class="header-navigation">
+          <ol class="header-navigation__list">
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">Информация</a>
             </li>
-            <li class="filter-form__item">
-              <div class="filter-form__checkbox">
-                <input type="checkbox">
-                <div class="filter-form__box"></div>
-              </div>
-              <p class="filter-form__text">Mr Natty</p>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">Новости</a>
             </li>
-            <li class="filter-form__item">
-              <div class="filter-form__checkbox">
-                <input type="checkbox">
-                <div class="filter-form__box"></div>
-              </div>
-              <p class="filter-form__text">Suavecito</p>
+            <li class="header-navigation__item">
+              <a href="/price.html" class="header-navigation__link"
+                >Прайс-лист</a
+              >
             </li>
-            <li class="filter-form__item">
-              <div class="filter-form__checkbox">
-                <input type="checkbox">
-                <div class="filter-form__box"></div>
-              </div>
-              <p class="filter-form__text">Malin+Goetz</p>
+            <li class="header-navigation__item">
+              <a
+                href="/shop.html"
+                class="header-navigation__link header-navigation__link_active"
+                >Магазин</a
+              >
             </li>
-            <li class="filter-form__item">
-              <div class="filter-form__checkbox">
-                <input type="checkbox">
-                <div class="filter-form__box"></div>
-              </div>
-              <p class="filter-form__text">Murray’s</p>
-            </li>
-            <li class="filter-form__item">
-              <div class="filter-form__checkbox">
-                <input type="checkbox">
-                <div class="filter-form__box"></div>
-              </div>
-              <p class="filter-form__text">American Crew</p>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">Контакты</a>
             </li>
           </ol>
-        </div>
+        </nav>
+      </section>
+    </header>
 
-        <div class="filter-form__groups">
-          <h3 class="filter-form__title">ГРУППЫ ТОВАРОВ:</h3>
-          <ol class="filter-form__list">
-            <li class="filter-form__item">
-              <div class="filter-form__radio">
-                <input name="groups" type="radio">
-                <div class="filter-form__radio-box"></div>
-              </div>
-              <p class="input__form__paragraph">Бритвенные принадлежности</p>
-            </li>
-            <li class="filter-form__item">
-              <div class="filter-form__radio">
-                <input name="groups" type="radio">
-                <div class="filter-form__radio-box"></div>
-              </div>
-              <p class="input__form__paragraph">Средства для ухода</p>
-            </li>
-            <li class="filter-form__item">
-              <div class="filter-form__radio">
-                <input name="groups" type="radio">
-                <div class="filter-form__radio-box"></div>
-              </div>
-              <p class="input__form__paragraph">Аксессуары</p>
-            </li>
-          </ol>  
-        </div>
-        <button type="submit" class="filter-form__button">Показать</button>
-      </form>
-      <div class="content__wrapper">
-        <div class="cards">
-          
-          </div>
-
-        </div>
-        <ul class="pagination">
-
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <nav class="footer-navigation">
-        <ol class="footer-navigation__list">
-          <li class="footer-navigation__item">Барбершоп «БОРОДИНСКИЙ»</li>
-          <li class="footer-navigation__item">
-            Адрес: г. Санкт-Петербург б. Конюшенная д.19/8
+    <main class="main">
+      <nav class="bread-crumbs">
+        <h3 class="bread-crumbs__title">СРЕДСТВА ДЛЯ УХОДА</h3>
+        <ol class="bread-crumbs__list">
+          <li class="bread-crumbs__item">Главная</li>
+          <img
+            class="bread-crumbs__separator"
+            src="/images/cube-black.svg"
+            alt="cube"
+          />
+          <li class="bread-crumbs__item">магазин</li>
+          <img
+            class="bread-crumbs__separator"
+            src="/images/cube-black.svg"
+            alt="cube"
+          />
+          <li class="bread-crumbs__item bread-crumbs__item_active">
+            средство для ухода
           </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="#">Как нас найти?</a>
-          </li>
-          <li class="footer-navigation__item">Телефон: +7 (495) 666-02-66</li>
         </ol>
       </nav>
-      <div class="social">
-        <h5 class="social__title">Давайте дружить!</h5>
-        <div class="social__icons">
-          <img class="social__img" src="images/vk.png" alt="vk" />
-          <img class="social__img" src="images/facebook.png" alt="facebook" />
-          <img class="social__img" src="images/insta.png" alt="instagram" />
+
+      <section class="content">
+        <form class="filter-form">
+          <div class="filter-form__brends">
+            <h3 class="filter-form__title">ПРОИЗВОДИТЕЛИ:</h3>
+            <ol class="filter-form__list">
+              <li class="filter-form__item">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" />
+                  <div class="filter-form__box"></div>
+                </div>
+                <p class="filter-form__text">Baxter of California</p>
+              </li>
+              <li class="filter-form__item">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" />
+                  <div class="filter-form__box"></div>
+                </div>
+                <p class="filter-form__text">Mr Natty</p>
+              </li>
+              <li class="filter-form__item">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" />
+                  <div class="filter-form__box"></div>
+                </div>
+                <p class="filter-form__text">Suavecito</p>
+              </li>
+              <li class="filter-form__item">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" />
+                  <div class="filter-form__box"></div>
+                </div>
+                <p class="filter-form__text">Malin+Goetz</p>
+              </li>
+              <li class="filter-form__item">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" />
+                  <div class="filter-form__box"></div>
+                </div>
+                <p class="filter-form__text">Murray’s</p>
+              </li>
+              <li class="filter-form__item">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" />
+                  <div class="filter-form__box"></div>
+                </div>
+                <p class="filter-form__text">American Crew</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="filter-form__groups">
+            <h3 class="filter-form__title">ГРУППЫ ТОВАРОВ:</h3>
+            <ol class="filter-form__list">
+              <li class="filter-form__item">
+                <div class="filter-form__radio">
+                  <input name="groups" type="radio" />
+                  <div class="filter-form__radio-box"></div>
+                </div>
+                <p class="input__form__paragraph">Бритвенные принадлежности</p>
+              </li>
+              <li class="filter-form__item">
+                <div class="filter-form__radio">
+                  <input name="groups" type="radio" />
+                  <div class="filter-form__radio-box"></div>
+                </div>
+                <p class="input__form__paragraph">Средства для ухода</p>
+              </li>
+              <li class="filter-form__item">
+                <div class="filter-form__radio">
+                  <input name="groups" type="radio" />
+                  <div class="filter-form__radio-box"></div>
+                </div>
+                <p class="input__form__paragraph">Аксессуары</p>
+              </li>
+            </ol>
+          </div>
+          <button type="submit" class="filter-form__button">Показать</button>
+        </form>
+        <div class="content__wrapper">
+          <div class="cards"></div>
+          <ul class="pagination">
+            <li class="pagination__item">
+              <button id="pagination_prev-button" class="pagination__button">назад</button>
+            </li>
+            
+            <li class="pagination__item">
+              <button id="pagination_next-button" class="pagination__button">вперед</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <nav class="footer-navigation">
+          <ol class="footer-navigation__list">
+            <li class="footer-navigation__item">Барбершоп «БОРОДИНСКИЙ»</li>
+            <li class="footer-navigation__item">
+              Адрес: г. Санкт-Петербург б. Конюшенная д.19/8
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">Как нас найти?</a>
+            </li>
+            <li class="footer-navigation__item">Телефон: +7 (495) 666-02-66</li>
+          </ol>
+        </nav>
+        <div class="social">
+          <h5 class="social__title">Давайте дружить!</h5>
+          <div class="social__icons">
+            <img class="social__img" src="images/vk.png" alt="vk" />
+            <img class="social__img" src="images/facebook.png" alt="facebook" />
+            <img class="social__img" src="images/insta.png" alt="instagram" />
+          </div>
+        </div>
+        <div class="license">
+          <h5 class="license__title">Разработано:</h5>
+          <button class="license__link" href="#">Asim</button>
         </div>
       </div>
-      <div class="license">
-        <h5 class="license__title">Разработано:</h5>
-        <button class="license__link" href="#">Asim</button>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

@@ -53,8 +53,48 @@ function displayItems(page){
 
 function setupPagination(){
   const pagination = document.querySelector(".pagination")
+  const pageCount = Math.ceil(items.length / itemsPerPage)
+  const prevButton = document.getElementById("pagination_prev-button")
+  const nextButton = document.getElementById("pagination_next-button")
+  if(currentPage === 1){
+    prevButton.classList.add("pagination__button_inactive")
+  }
+  if(currentPage === pageCount){
+    nextButton.classList.add("pagination__button_inactive")
+  }
+  prevButton.addEventListener("click",(event)=>{
+    event.preventDefault()
+    currentPage--
+    displayItems(currentPage)
+    //поменять
+    updatePagination()
+  })
+  nextButton.addEventListener("click",(event)=>{
+    event.preventDefault()
+    currentPage++
+    displayItems(currentPage)
+    //поменять
+    updatePagination()
+
+  })
+  for (let i = 0; i < pageCount;i++){
+    const li = document.createElement("li")
+  }
+
+}
+function updatePagination(){
+  const pagination = document.querySelector(".pagination")
+  const prevButton = document.getElementById("pagination_prev-button")
+  const nextButton = document.getElementById("pagination_next-button")
+  if(currentPage === 1){
+    prevButton.classList.add("pagination__button_inactive")
+  }
+  if(currentPage === pageCount){
+    nextButton.classList.add("pagination__button_inactive")
+  }
 }
 
 
+setupPagination()
 displayItems(currentPage)
 
