@@ -59,3 +59,8 @@
 .pagination__button_inactive{
   display: none;
 }
+.pagination__button_active{
+  border: 1px solid black;
+  color: black;
+  background-color: #fff;
+}
