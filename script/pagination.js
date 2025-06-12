@@ -51,9 +51,12 @@ function displayItems(page) {
 function setupPagination() {
   const pagination = document.querySelector(".pagination");
   const pageCount = Math.ceil(items.length / itemsPerPage);
-  const prevButton = document.getElementById("pagination_prev-button");
-  const nextButton = document.getElementById("pagination_next-button");
-  updatePagination();
+  const prevButton = document.createElement("button");
+
+  const li1 = document.createElement("li");
+  prevButton.className = "pagination__button"
+  prevButton.id = "pagination_prev-button"
+  prevButton.textContent= "назад"
   prevButton.addEventListener("click", (event) => {
     event.preventDefault();
     currentPage--;
@@ -61,6 +64,32 @@ function setupPagination() {
     //поменять
     updatePagination();
   });
+
+  li1.appendChild(prevButton)
+  pagination.appendChild(li1)
+
+  for (let i = 0; i < pageCount; i++) {
+    const li = document.createElement("li");
+    const button = document.createElement("button");
+    button.className = "pagination__button";
+    button.textContent = i + 1;
+    if (i + 1 === currentPage) {
+      button.classList.add("pagination__button_active");
+    }
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      currentPage = i + 1;
+      displayItems(currentPage);
+      updatePagination();
+    });
+    li.appendChild(button);
+    pagination.appendChild(li);
+  }
+  const nextButton = document.createElement("button");
+  const li2 = document.createElement("li");
+  nextButton.className = "pagination__button"
+  nextButton.id = "pagination_next-button"
+  nextButton.textContent = "вперед"
   nextButton.addEventListener("click", (event) => {
     event.preventDefault();
     currentPage++;
@@ -68,25 +97,13 @@ function setupPagination() {
     //поменять
     updatePagination();
   });
-  for (let i = 0; i < pageCount; i++) {
-    const li = document.createElement("li");
-    const button = document.createElement("button")
-    button.className = "pagination__button"
-    button.textContent = i+1;
-    if (i === currentPage){
-      button.classList.add("pagination__button_active")
-      
-    }
-    button.addEventListener("click", (event) => {
-      event.preventDefault()
-      currentPage = i+1
-      displayItems(currentPage)
-      updatePagination()
-    })
-    li.appendChild(button)
-    pagination.appendChild(li)
-  }
+  
+  li2.appendChild(nextButton)
+  pagination.appendChild(li2)
 
+ 
+
+  updatePagination();
 }
 
 function updatePagination() {
@@ -100,7 +117,19 @@ function updatePagination() {
     pageCount === currentPage
   );
   console.log(currentPage);
-}
+
+  const buttons = document.getElementsByClassName("pagination__button")
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("pagination__button_active");
+  }
+
+  for (let i = 0; i < buttons.length; i++) {
+    if (buttons[i].textContent == currentPage) {
+      console.log(buttons[i]);
+      buttons[i].classList.add("pagination__button_active");
+    }
+  }
+} 
 
 setupPagination();
 displayItems(currentPage);
